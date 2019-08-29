@@ -33,3 +33,15 @@ weaponQualities = HashMap.fromList
 
 lookupWeaponQuality :: String -> String
 lookupWeaponQuality name = printMapEntry weaponQualities name
+
+armorQualities :: HashMap.Map String String
+armorQualities = HashMap.fromList
+     [ ("Dangerous", "Clothing or armor of this Quality cannot adequately protect you from harm.  Should you suffer an Injury during this time without wearing a suit of armor, you begin to Bleed.")
+     , ("Heavy", "Armor of this Quality prohibits the use of the Incantation Skill to cast Magick and Coordination in order to Dodge attacks.")
+     , ("Natural", "Armor of this Quality adds a +10 Base Chance to Dodge attacks.") ]
+
+miscQualities :: HashMap.Map String String
+miscQualities = HashMap.fromList
+     [ ("Castle-forged", "This Quality is typically conferred by the best craftsmanship.  Armor, weapons and shields of this Quality cannot acquire the Ruined! Quality, outside of special exceptions by the GM.   All Castle-forged, trappings have an associated base cost of three times the listed price.")
+     , ("Maker's Mark", "This Quality is conferred by the handiwork of Guild Masters.  Weapons of this Quality gain a +5 Base Chance to strike.  Armor of this Quality reduces its Encumbrance Value by 2 (to a minimum of 1).  Shields of this Quality add a passive +1 to Damage Threshold Modifier.  All Maker's Marked trappings hav ean associated base cost of six times the listed price.")
+     , ("Ruined!", "Armor of this Quality does not add to Damage Threshold.  Shields of this Quality cannot be used to Parry.  Weapons of this Quality suffer a -3 penalty to Total Damage.  Fixing Ruined! trappings require an appropriate tradesman who can fix it, who must be paid six days' wage.  Alternatively, if you can make a successful Tradecraft Test after six days of repair, you may fix it yourself.  If already Ruined! trappings are once again Ruined! before they can be fixed, they are irrevocably destroyed.  Ruined! items have no sell or trade value whatsoever.") ]
