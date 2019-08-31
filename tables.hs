@@ -97,3 +97,109 @@ rollGrievousInjury n
     | elem n [93..100] = printGrievousInjury "Severed Artery"
     | otherwise = error ("out of range die roll: " ++ (show n))
     where printGrievousInjury = printMapEntry grievousInjuries
+
+rollArchetype :: Integer -> String
+rollArchetype n 
+    | elem n [1..15]    = "Academic"
+    | elem n [16..32]   = "Commoner"
+    | elem n [33..49]   = "Knave"
+    | elem n [50..66]   = "Ranger"
+    | elem n [67..83]   = "Socialite"
+    | elem n [84..100]  = "Warrior"
+    | otherwise = error ("out of range die roll: " ++ (show n))
+
+rollAcademic :: Integer -> String
+rollAcademic n 
+    | elem n [1..8]    = "Adherent"
+    | elem n [9..17]   = "Anchorite"
+    | elem n [17..25]  = "Antiquarian"
+    | elem n [26..33]  = "Apothecary"
+    | elem n [34..41]  = "Astrologer"
+    | elem n [42..49]  = "Diabolist"
+    | elem n [50..58]  = "Engineer"
+    | elem n [59..67]  = "Informer"
+    | elem n [68..76]  = "Investigator"
+    | elem n [77..85]  = "Monk"
+    | elem n [86..92]  = "Preacher"
+    | elem n [93..100] = "Scribe"
+    | otherwise = error ("out of range die roll: " ++ (show n))
+
+rollCommoner :: Integer -> String
+rollCommoner n 
+    | elem n [1..8]    = "Artisan"
+    | elem n [9..17]   = "Barber Surgeon"
+    | elem n [17..25]  = "Boatman"
+    | elem n [26..33]  = "Camp Follower"
+    | elem n [34..41]  = "Cheapjack"
+    | elem n [42..49]  = "Coachman"
+    | elem n [50..58]  = "Doomsayer"
+    | elem n [59..67]  = "Jailer"
+    | elem n [68..76]  = "Laborer"
+    | elem n [77..85]  = "Peasant"
+    | elem n [86..92]  = "Rat Catcher"
+    | elem n [93..100] = "Servant"
+    | otherwise = error ("out of range die roll: " ++ (show n))
+
+rollKnave :: Integer -> String
+rollKnave n 
+    | elem n [1..8]    = "Beggar"
+    | elem n [9..17]   = "Burglar"
+    | elem n [17..25]  = "Charlatan"
+    | elem n [26..33]  = "Footpad"
+    | elem n [34..41]  = "Gambler"
+    | elem n [42..49]  = "Graverobber"
+    | elem n [50..58]  = "Guttersnipe"
+    | elem n [59..67]  = "Highwayman"
+    | elem n [68..76]  = "Prostitute"
+    | elem n [77..85]  = "Smuggler"
+    | elem n [86..92]  = "Vagabond"
+    | elem n [93..100] = "Vigilante"
+    | otherwise = error ("out of range die roll: " ++ (show n))
+
+rollRanger :: Integer -> String
+rollRanger n 
+    | elem n [1..8]    = "Animal Tamer"
+    | elem n [9..17]   = "Bailiff"
+    | elem n [17..25]  = "Bonepicker"
+    | elem n [26..33]  = "Bounty Hunter"
+    | elem n [34..41]  = "Gamekeeper"
+    | elem n [42..49]  = "Hedgwise"
+    | elem n [50..58]  = "Old Believer"
+    | elem n [59..67]  = "Outrider"
+    | elem n [68..76]  = "Pilgrim"
+    | elem n [77..85]  = "Reeve"
+    | elem n [86..92]  = "Slayer"
+    | elem n [93..100] = "Trapper"
+    | otherwise = error ("out of range die roll: " ++ (show n))
+
+rollSocialite :: Integer -> String
+rollSocialite n 
+    | elem n [1..8]    = "Anarchist"
+    | elem n [9..17]   = "Courtier"
+    | elem n [17..25]  = "Cultist"
+    | elem n [26..33]  = "Entertainer"
+    | elem n [34..41]  = "Envoy"
+    | elem n [42..49]  = "Fop"
+    | elem n [50..58]  = "Jester"
+    | elem n [59..67]  = "Provocateur"
+    | elem n [68..76]  = "Racketeer"
+    | elem n [77..85]  = "Raconteur"
+    | elem n [86..92]  = "Rake"
+    | elem n [93..100] = "Valet"
+    | otherwise = error ("out of range die roll: " ++ (show n))
+
+rollWarrior :: Integer -> String
+rollWarrior n 
+    | elem n [1..8]    = "Berserker"
+    | elem n [9..17]   = "Bravo"
+    | elem n [17..25]  = "Buccaneer"
+    | elem n [26..33]  = "Dragoon"
+    | elem n [34..41]  = "Hedge Knight"
+    | elem n [42..49]  = "Man-At-Arms"
+    | elem n [50..58]  = "Militiaman"
+    | elem n [59..67]  = "Pit Fighter"
+    | elem n [68..76]  = "Pugilist"
+    | elem n [77..85]  = "Sellsword"
+    | elem n [86..92]  = "Squire"
+    | elem n [93..100] = "Watchman"
+    | otherwise = error ("out of range die roll: " ++ (show n))
