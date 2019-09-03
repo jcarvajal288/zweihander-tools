@@ -313,7 +313,7 @@ rollDistinguishingMarks n =
         48 -> "Jaundiced complexion"
         49 -> "Lanky hair"
         50 -> "Large and hairy mole"
-        50 -> "Large nose"
+        51 -> "Large nose"
         52 -> "Large red birthmark on arms"
         53 -> "Lazy eye"
         54 -> "Leathery countenance"
